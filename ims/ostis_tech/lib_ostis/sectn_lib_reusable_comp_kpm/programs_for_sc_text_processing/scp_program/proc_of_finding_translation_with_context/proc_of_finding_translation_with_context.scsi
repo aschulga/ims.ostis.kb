@@ -16,14 +16,14 @@ scp_program -> proc_of_finding_translation_with_context
 		 	-> rrel_1: rrel_assign: rrel_scp_var: _elem2;;
 		 	-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
-            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		 	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_sc_text_translation;;
 	         
-            -> rrel_set_1: rrel_assign: rrel_scp_var: _mainset;;
+            		-> rrel_set_1: rrel_assign: rrel_scp_var: _mainset;;
 
-            => nrel_then: .proc_of_finding_translation_with_context_operator2A;;
+            		=> nrel_then: .proc_of_finding_translation_with_context_operator2A;;
 			=> nrel_else: .proc_of_finding_translation_with_context_operator_return;;
-            *);;
+            		*);;
 
 		-> .proc_of_finding_translation_with_context_operator2A 
 			(*
@@ -37,13 +37,13 @@ scp_program -> proc_of_finding_translation_with_context
 			=> nrel_else: .proc_of_finding_translation_with_context_operator5A;;
 			*);; 
 
-        -> .proc_of_finding_translation_with_context_operator2B 
+        	-> .proc_of_finding_translation_with_context_operator2B 
 			(*
 		 	<- eraseEl;;
 
 		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc;;
 
-            => nrel_goto: .proc_of_finding_translation_with_context_operator2C_check_context;;
+            		=> nrel_goto: .proc_of_finding_translation_with_context_operator2C_check_context;;
 		 	*);;
 
 		-> .proc_of_finding_translation_with_context_operator2C_check_context 
@@ -65,14 +65,14 @@ scp_program -> proc_of_finding_translation_with_context
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _translit;;
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_assign: rrel_scp_var: _opr;;
-            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		 	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_example;;
 
-	        => nrel_then: .proc_of_finding_translation_with_context_operator3A_check_context;;
-	        => nrel_else: .proc_of_finding_translation_with_context_operator2A;;
-            *);;
+	        	=> nrel_then: .proc_of_finding_translation_with_context_operator3A_check_context;;
+	        	=> nrel_else: .proc_of_finding_translation_with_context_operator2A;;
+            		*);;
 
-        -> .proc_of_finding_translation_with_context_operator3A_check_context 
+        	-> .proc_of_finding_translation_with_context_operator3A_check_context 
 			(*
 			<- searchElStr3;;
 
@@ -92,7 +92,7 @@ scp_program -> proc_of_finding_translation_with_context
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _translit;;
 
-            => nrel_goto: .proc_of_finding_translation_with_context_operator2D;;
+            		=> nrel_goto: .proc_of_finding_translation_with_context_operator2D;;
 		 	*);;
 
 		-> .proc_of_finding_translation_with_context_operator2D 
@@ -102,14 +102,14 @@ scp_program -> proc_of_finding_translation_with_context
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _translit;;
 		 	-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
-            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		 	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_sc_text_translation;;
 	         
-            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_translation_with_context;;
+            		-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_translation_with_context;;
 		 	-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_translation_with_context;;
 
 			=> nrel_goto: .proc_of_finding_translation_with_context_operator3A;;
-            *);;
+            		*);;
                  
 		-> .proc_of_finding_translation_with_context_operator3A 
 			(*
@@ -118,15 +118,15 @@ scp_program -> proc_of_finding_translation_with_context
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _translit;;
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_assign: rrel_scp_var: _opr;;
-            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		 	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_example;;
 
-            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_translation_with_context;;
-            -> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_translation_with_context;;
+            		-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_translation_with_context;;
+            		-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_translation_with_context;;
 		 	-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_translation_with_context;;
 
-	        => nrel_goto: .proc_of_finding_translation_with_context_operator3B;;
-            *);;
+	        	=> nrel_goto: .proc_of_finding_translation_with_context_operator3B;;
+            		*);;
 
 		-> .proc_of_finding_translation_with_context_operator3B 
 			(*
@@ -136,7 +136,7 @@ scp_program -> proc_of_finding_translation_with_context
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _opr;;
 
-            -> rrel_set_1: rrel_assign: rrel_scp_var: _tempset;;
+            		-> rrel_set_1: rrel_assign: rrel_scp_var: _tempset;;
 
 		 	=> nrel_then: .proc_of_finding_translation_with_context_operator4A;;
 			=> nrel_else: .proc_of_finding_translation_with_context_operator_return;;
@@ -151,7 +151,7 @@ scp_program -> proc_of_finding_translation_with_context
 		 	-> rrel_3: rrel_assign: rrel_scp_var: _lang;;
 
 		 	=> nrel_then: .proc_of_finding_translation_with_context_operator4B;;
-            => nrel_else: .proc_of_finding_translation_with_context_operator2A;;
+            		=> nrel_else: .proc_of_finding_translation_with_context_operator2A;;
 		 	*);; 
 
 		-> .proc_of_finding_translation_with_context_operator4B 
@@ -160,7 +160,7 @@ scp_program -> proc_of_finding_translation_with_context
 
 		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc;;
 
-            => nrel_goto: .proc_of_finding_translation_with_context_operator4C;;
+            		=> nrel_goto: .proc_of_finding_translation_with_context_operator4C;;
 		 	*);;
                
 		-> .proc_of_finding_translation_with_context_operator4C 
@@ -172,7 +172,7 @@ scp_program -> proc_of_finding_translation_with_context
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _lang;;
 
 		 	=> nrel_then: .proc_of_finding_translation_with_context_operator4D;;
-            => nrel_else: .proc_of_finding_translation_with_context_operator4A;;
+            		=> nrel_else: .proc_of_finding_translation_with_context_operator4A;;
 		 	*);;
 
 		-> .proc_of_finding_translation_with_context_operator4D 
@@ -196,8 +196,8 @@ scp_program -> proc_of_finding_translation_with_context
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_translation_with_context;;
 
-	        => nrel_then: .proc_of_finding_translation_with_context_operator4A;;
-            *);;
+	        	=> nrel_then: .proc_of_finding_translation_with_context_operator4A;;
+            		*);;
 
 		-> .proc_of_finding_translation_with_context_operator5A 
 			(*
@@ -207,7 +207,7 @@ scp_program -> proc_of_finding_translation_with_context
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_sc_text_translation;;
 
-            => nrel_goto: .proc_of_finding_translation_with_context_operator5B;;
+            		=> nrel_goto: .proc_of_finding_translation_with_context_operator5B;;
 		 	*);;
 
 		-> .proc_of_finding_translation_with_context_operator5B 
@@ -217,7 +217,7 @@ scp_program -> proc_of_finding_translation_with_context
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_const: rrel_example;;
 
-            => nrel_goto: .proc_of_finding_translation_with_context_operator_5_1;;
+            		=> nrel_goto: .proc_of_finding_translation_with_context_operator_5_1;;
 		 	*);;
 		
 		-> .proc_of_finding_translation_with_context_operator_5_1 
@@ -236,7 +236,7 @@ scp_program -> proc_of_finding_translation_with_context
 
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _tempset;;
 
-            => nrel_goto: .proc_of_finding_translation_with_context_operator_6_1;;
+            		=> nrel_goto: .proc_of_finding_translation_with_context_operator_6_1;;
 		 	*);;
 
 		-> .proc_of_finding_translation_with_context_operator_6_1 
@@ -255,7 +255,7 @@ scp_program -> proc_of_finding_translation_with_context
 
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _mainset;;
 
-            => nrel_goto: .proc_of_finding_translation_with_context_operator_return;;
+            		=> nrel_goto: .proc_of_finding_translation_with_context_operator_return;;
 		 	*);;
 
 		-> .proc_of_finding_translation_with_context_operator_return 

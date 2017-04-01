@@ -15,14 +15,14 @@ scp_program -> proc_of_finding_identifier_with_context
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
 		 	-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_assign: rrel_scp_var: _elem2;;
-            ->  rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            		->  rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		 	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
 	         
-            -> rrel_set_3: rrel_assign: rrel_scp_var: _mainset;;
+		        -> rrel_set_3: rrel_assign: rrel_scp_var: _mainset;;
 
-            => nrel_then: .proc_of_finding_identifier_with_context_operator1B;;
+            		=> nrel_then: .proc_of_finding_identifier_with_context_operator1B;;
 			=> nrel_else: .proc_of_finding_identifier_with_context_operator_return;;
-            *);;
+            		*);;
 
 		-> .proc_of_finding_identifier_with_context_operator1B 
 			(*
@@ -33,7 +33,7 @@ scp_program -> proc_of_finding_identifier_with_context
 		 	-> rrel_3: rrel_assign: rrel_scp_var: _idtf;;
 
 		 	=> nrel_then: .proc_of_finding_identifier_with_context_operator1C;;
-            => nrel_else: .proc_of_finding_identifier_with_context_operator4;;
+            		=> nrel_else: .proc_of_finding_identifier_with_context_operator4;;
 		 	*);; 
 
 		-> .proc_of_finding_identifier_with_context_operator1C 
@@ -42,7 +42,7 @@ scp_program -> proc_of_finding_identifier_with_context
 
 		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc2;;
 
-            => nrel_goto: .proc_of_finding_identifier_with_context_operator1C_check_context;;
+            		=> nrel_goto: .proc_of_finding_identifier_with_context_operator1C_check_context;;
 		 	*);;
 
 		-> .proc_of_finding_identifier_with_context_operator1C_check_context 
@@ -54,7 +54,7 @@ scp_program -> proc_of_finding_identifier_with_context
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _idtf;;
 
 		 	=> nrel_then: .proc_of_finding_identifier_with_context_operatorF_1_add_to_answer;;
-            => nrel_else: .proc_of_finding_identifier_with_context_operator1B;;
+            		=> nrel_else: .proc_of_finding_identifier_with_context_operator1B;;
 		 	*);; 
 
 		-> .proc_of_finding_identifier_with_context_operatorF_1_add_to_answer 
@@ -65,7 +65,7 @@ scp_program -> proc_of_finding_identifier_with_context
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _idtf;;
 
-            => nrel_goto: .proc_of_finding_identifier_with_context_operatorF_2_add_to_answer;;
+            		=> nrel_goto: .proc_of_finding_identifier_with_context_operatorF_2_add_to_answer;;
 		 	*);;
 
 		-> .proc_of_finding_identifier_with_context_operatorF_2_add_to_answer
@@ -75,14 +75,14 @@ scp_program -> proc_of_finding_identifier_with_context
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
 		 	-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _idtf;;
-            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		 	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
 	         
-            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_identifier_with_context;;
+	            	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_identifier_with_context;;
 		 	-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_identifier_with_context;;
 
-            => nrel_goto: .proc_of_finding_identifier_with_context_operator2B;;
-            *);; 	
+            		=> nrel_goto: .proc_of_finding_identifier_with_context_operator2B;;
+            		*);; 	
 
 		-> .proc_of_finding_identifier_with_context_operator2B 
 			(*
@@ -92,7 +92,7 @@ scp_program -> proc_of_finding_identifier_with_context
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _idtf;;
 
-            -> rrel_set_1: rrel_assign: rrel_scp_var: _tempset;;
+            		-> rrel_set_1: rrel_assign: rrel_scp_var: _tempset;;
 
 		 	=> nrel_then: .proc_of_finding_identifier_with_context_operator3A;;
 			=> nrel_else: .proc_of_finding_identifier_with_context_operator1B;;
@@ -107,7 +107,7 @@ scp_program -> proc_of_finding_identifier_with_context
 		 	-> rrel_3: rrel_assign: rrel_scp_var: _lang2;;
 
 		 	=> nrel_then: .proc_of_finding_identifier_with_context_operator3B;;
-            => nrel_else: .proc_of_finding_identifier_with_context_operator1B;;
+            		=> nrel_else: .proc_of_finding_identifier_with_context_operator1B;;
 		 	*);; 
 
 		-> .proc_of_finding_identifier_with_context_operator3B 
@@ -116,7 +116,7 @@ scp_program -> proc_of_finding_identifier_with_context
 
 		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc;;
 
-            => nrel_goto: .proc_of_finding_identifier_with_context_operator3C;;
+            		=> nrel_goto: .proc_of_finding_identifier_with_context_operator3C;;
 		 	*);;	
 
 		-> .proc_of_finding_identifier_with_context_operator3C 
@@ -128,7 +128,7 @@ scp_program -> proc_of_finding_identifier_with_context
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _lang2;;
 
 		 	=> nrel_then: .proc_of_finding_identifier_with_context_operatorF_3;;
-            => nrel_else: .proc_of_finding_identifier_with_context_operator3A;;
+            		=> nrel_else: .proc_of_finding_identifier_with_context_operator3A;;
 		 	*);;
 
 		-> .proc_of_finding_identifier_with_context_operatorF_3 
@@ -150,10 +150,10 @@ scp_program -> proc_of_finding_identifier_with_context
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_var: _idtf;;
 
-            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_identifier_with_context;;
+            		-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer_proc_of_finding_identifier_with_context;;
 
-	        => nrel_goto: .proc_of_finding_identifier_with_context_operator3A;;
-            *);;   
+	        	=> nrel_goto: .proc_of_finding_identifier_with_context_operator3A;;
+            		*);;   
 
 		-> .proc_of_finding_identifier_with_context_operator4 
 			(*
@@ -163,7 +163,7 @@ scp_program -> proc_of_finding_identifier_with_context
 		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		 	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
 
-            => nrel_goto: .proc_of_finding_identifier_with_context_operator_5_1;;
+            		=> nrel_goto: .proc_of_finding_identifier_with_context_operator_5_1;;
 		 	*);;
 
 		-> .proc_of_finding_identifier_with_context_operator_5_1 
@@ -182,7 +182,7 @@ scp_program -> proc_of_finding_identifier_with_context
 
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _tempset;;
 
-            => nrel_goto: .proc_of_finding_identifier_with_context_operator_6_1;;
+            		=> nrel_goto: .proc_of_finding_identifier_with_context_operator_6_1;;
 		 	*);;
 		
 		-> .proc_of_finding_identifier_with_context_operator_6_1 
@@ -201,7 +201,7 @@ scp_program -> proc_of_finding_identifier_with_context
 
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _mainset;;
 
-            => nrel_goto: .proc_of_finding_identifier_with_context_operator_return;;
+            		=> nrel_goto: .proc_of_finding_identifier_with_context_operator_return;;
 		 	*);;
 
 		-> .proc_of_finding_identifier_with_context_operator_return 
